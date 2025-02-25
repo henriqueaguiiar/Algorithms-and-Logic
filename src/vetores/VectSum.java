@@ -23,13 +23,13 @@ public class VectSum {
             System.out.printf("%.1f  ",  array[i]);
         }
 
-        double sum = 0;
+        double sum = 0.0;
 
         for(int i = 0; i< array.length; i++){
             sum = sum + array[i];
         }
 
-        double media = sum / n;
+        double media = sum / array.length;
 
         System.out.printf("\nSOMA = %.2f%nMEDIA = %.2f%n",sum, media);
 
