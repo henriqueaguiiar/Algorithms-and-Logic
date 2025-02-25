@@ -22,11 +22,18 @@ public class Exercicio1 {
 
         System.out.println("NUMEROS NEGATIVOS: ");
 
+        boolean encontrouNegativo = true;
+
         for(int i = 0; i< array.length; i++){
             if(array[i] < 0){
                 System.out.println(array[i]);
+                encontrouNegativo = true;
             }
         }
+        if(!encontrouNegativo){
+            System.out.println("Nenhum numero negativo foi digitado.");
+        }
+
         input.close();
     }
 }
